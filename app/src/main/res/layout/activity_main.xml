@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MapsActivity" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Escolha o Tipo de Mapa"
+            android:textSize="40sp" />
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/mapaNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:text="Normal" />
+
+        <Button
+            android:id="@+id/mapaHibrido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:text="Híbrido" />
+
+        <Button
+            android:id="@+id/mapaTerreno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:text="Terreno" />
+
+        <Button
+            android:id="@+id/mapaSatelite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:text="Satélite" />
+
+</LinearLayout>
